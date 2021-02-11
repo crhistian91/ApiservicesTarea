@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "d84835d1-536f-43e8-ba57-f0bcedd8c821",
+		"name": "MicroServiciosAPP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "peticion usuario get()",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/microservers/LumenAuthorsApi/public/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"microservers",
+						"LumenAuthorsApi",
+						"public",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticion usuario post() store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "documento",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "nombres",
+							"value": "crhistian vargas",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "Tecnologia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/microservers/LumenAuthorsApi/public/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"microservers",
+						"LumenAuthorsApi",
+						"public",
+						"usuarios"
+					],
+					"query": [
+						{
+							"key": "documento",
+							"value": "12312312",
+							"disabled": true
+						},
+						{
+							"key": "nombres",
+							"value": "crhistian vargas",
+							"disabled": true
+						},
+						{
+							"key": "area",
+							"value": "tecnologia",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticion usuario get() show ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "documento",
+							"value": "123123",
+							"type": "text"
+						},
+						{
+							"key": "nombres",
+							"value": "crhistian vargas",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "Tecnologia",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/microservers/LumenAuthorsApi/public/usuarios/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"microservers",
+						"LumenAuthorsApi",
+						"public",
+						"usuarios",
+						"31"
+					],
+					"query": [
+						{
+							"key": "documento",
+							"value": "12312312",
+							"disabled": true
+						},
+						{
+							"key": "nombres",
+							"value": "crhistian vargas",
+							"disabled": true
+						},
+						{
+							"key": "area",
+							"value": "tecnologia",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticion usuario put() update ",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "documento",
+							"value": "99999",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/microservers/LumenAuthorsApi/public/usuarios/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"microservers",
+						"LumenAuthorsApi",
+						"public",
+						"usuarios",
+						"31"
+					],
+					"query": [
+						{
+							"key": "documento",
+							"value": "12312312",
+							"disabled": true
+						},
+						{
+							"key": "nombres",
+							"value": "crhistian vargas",
+							"disabled": true
+						},
+						{
+							"key": "area",
+							"value": "tecnologia",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticion usuario delete() delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/microservers/LumenAuthorsApi/public/usuarios/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"microservers",
+						"LumenAuthorsApi",
+						"public",
+						"usuarios",
+						"31"
+					],
+					"query": [
+						{
+							"key": "documento",
+							"value": "12312312",
+							"disabled": true
+						},
+						{
+							"key": "nombres",
+							"value": "crhistian vargas",
+							"disabled": true
+						},
+						{
+							"key": "area",
+							"value": "tecnologia",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
